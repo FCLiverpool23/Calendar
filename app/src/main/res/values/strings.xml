@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">lab6</string>
+    <string name="notifications">Напоминания</string>
+    <string name="alarms">Будильники</string>
+    <string name="alarm">Будильник</string>
+    <string name="name">Название</string>
+    <string name="description">Описание</string>
+    <string name="place">Местоположение</string>
+    <string name="date">Дата</string>
+    <string name="all_day">Весь день</string>
+    <string name="timeStart">Время начала</string>
+    <string name="timeEnd">Время окончания</string>
+    <string name="description_time">icon_time</string>
+    <string name="description_date">icon_date</string>
+    <string name="description_place">icon_place</string>
+    <string name="description_text">icon_text</string>
+    <string name="activity_new_event">Новое событие</string>
+    <string name="activity_new_alarm">Новый будильник</string>
+    <string name="activity_name_event">Cобытие</string>
+    <string name="X">X</string>
+    <string name="add">-></string>
+    <string name="newEvent">New</string>
+    <string name="remove">Remove</string>
+    <string name="info">Info</string>
+</resources>

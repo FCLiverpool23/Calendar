@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <CalendarView
+            android:id="@+id/calendar"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.15"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/notification"
+                android:minHeight="50dp"
+                android:minWidth="50dp"
+                android:layout_width="0dp"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="All_event"
+                android:text="@string/notifications"
+                android:background="@drawable/border_button"
+                android:textColor="#C8C5BC"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/alarm"
+                android:minHeight="50dp"
+                android:minWidth="50dp"
+                android:layout_width="0dp"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="All_alarm"
+                android:text="@string/alarms"
+                android:background="@drawable/border_button"
+                android:textColor="#C8C5BC"/>
+
+        </LinearLayout>
+
+        <ViewSwitcher
+            android:id="@+id/switcher"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ListView
+                android:id="@+id/listEvent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:textColor="#C8C5BC" />
+
+            <ListView
+                android:id="@+id/listAlarm"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:textColor="#C8C5BC" />
+
+        </ViewSwitcher>
+
+        <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/new_event"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:onClick="New_event"
+                android:background="@drawable/border_button"
+                android:text="@string/newEvent"
+                android:textColor="#C8C5BC"
+                android:layout_gravity="center"/>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:paddingHorizontal="20dp"
+    android:paddingVertical="8dp"
+    android:orientation="horizontal"
+    android:background="@drawable/border_list">
+
+    <LinearLayout
+        android:id="@+id/layout_alarm"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.85"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/alarmTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="21:00"
+            android:textColor="#C8C5BC"
+            android:textSize="25sp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/alarmName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Проснись и пой"
+            android:textColor="#C8C5BC"
+            android:textSize="15sp">
+        </TextView>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/alarmToggleSwitch"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.15"
+        android:layout_gravity="center"
+        android:minWidth="50dp"
+        android:minHeight="50dp"
+        android:textColor="#C8C5BC"
+        android:textSize="20sp"/>
+
+</LinearLayout>
